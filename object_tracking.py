@@ -1,3 +1,21 @@
+"""
+Jose Miguel Gonzalez Zaragoza
+631145 IRSI 6to Semestre
+May 2024
+COMPUTER-VISION
+UDEM
+
+USING BRIEF AS A WAY TO DETECT MOVING OBJECTS
+
+HOW TO USE IT:
+python object_tracking.py --img_obj .\(YOUR IMAGE AND FORMAT ON THE FOLDER)
+
+
+"""
+
+
+
+
 import numpy as np
 import cv2 as cv
 import argparse as arg
@@ -11,7 +29,7 @@ def read_parser():
         Namespace: El objeto que contiene los argumentos analizados.
     """
     parser = arg.ArgumentParser(description="Program for feature detection and matching with BRIEF descriptor using STAR detector")
-    parser.add_argument("--train_image", 
+    parser.add_argument("--img_obj", 
                         dest="train_path", 
                         type=str, 
                         help="Path to train image")
